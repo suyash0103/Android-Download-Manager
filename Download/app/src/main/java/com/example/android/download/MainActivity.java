@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     DownloadManager.Request request = new DownloadManager.Request(Download_Uri);
                     request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE);
-                    request.setAllowedOverRoaming(false);
+                    request.setAllowedOverRoaming(true);
                     request.setTitle("Downloading");
                     //request.setDescription("Downloading");
                     request.setVisibleInDownloadsUi(true);
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 list.clear();
                 DownloadManager.Request request = new DownloadManager.Request(Download_Uri);
                 request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_WIFI | DownloadManager.Request.NETWORK_MOBILE);
-                request.setAllowedOverRoaming(false);
+                request.setAllowedOverRoaming(true);
                 request.setTitle("Downloading");
                 //request.setDescription("Downloading");
                 request.setVisibleInDownloadsUi(true);
